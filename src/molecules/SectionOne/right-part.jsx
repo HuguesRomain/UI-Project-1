@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import { color, size, font } from "../../styles/const";
+import { IoMdSearch } from "react-icons/io";
 
 const RightPartElements = styled.div`
   display: flex;
@@ -41,11 +42,18 @@ const Description = styled.p`
   width: ${rem(370)};
 `;
 
-const SearchBar = styled.input`
+const SearchBar = styled.textarea`
   border: 0;
   width: ${rem(250)};
-  padding: ${rem(13)} 0;
+  padding: ${rem(5)} 0;
   border-radius: 3px;
+  resize: none;
+  ::placeholder {
+    text-align: center;
+    width: ${rem(200)};
+    line-height: 30px;
+    color: ${color.textInput};
+  }
 `;
 
 export const RightPart = () => {
@@ -59,7 +67,7 @@ export const RightPart = () => {
             eiusmod tempor
           </Description>
         </ContentText>
-        <SearchBar placeholder="&#xF002; Search" />
+        <SearchBar placeholder={"Los Angeles, Torronto, Melun…"} />
       </RightPartContent>
     </RightPartElements>
   );
