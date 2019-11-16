@@ -9,9 +9,17 @@ export const color = {
 export const font = {
   fontFamily: "Avenir",
   bolder: "bolder",
-  medium: 300
+  heavy: 600,
+  medium: 400
 };
 
 export const size = {
-  bigTitle: "24px"
+  veryBigText: "24px",
+  bigText: "18px",
+  mediumText: "16px",
+  littleText: "14px"
+};
+
+export const device = {
+  iphoneX: "414px"
 };

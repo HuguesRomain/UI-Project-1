@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Deadend from "../../images/deadend.jpg";
 import { rem } from "polished";
-import { color, font } from "../../styles/const";
+import { color, font, device } from "../../styles/const";
 import Profile from "../../images/profilePic/profileHome1.png";
 import Pin from "../../images/pin.png";
 import { Stars } from "../../atoms/Stars";
@@ -20,6 +20,10 @@ const BackgroundImage = styled.div`
     width: 100%;
     height: 100%;
   }
+  @media (max-width: ${device.iphoneX}) {
+    width: ${rem(950)};
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+  }
 `;
 
 const Avis = styled.div`
@@ -29,12 +33,19 @@ const Avis = styled.div`
   position: absolute;
   z-index: 1;
   font-family: ${font.fontFamily};
+  @media (max-with: ${device.iphoneX}) {
+    margin: 0 0 0 0;
+  }
 `;
 
 const ProfilePic = styled.img`
   position: absolute;
   width: ${rem(50)};
   margin: ${rem(10)} ${rem(35)};
+  @media (max-with: ${device.iphoneX}) {
+    width: ${rem(90)};
+    margin: ${rem(20)} ${rem(5)};
+  }
 `;
 
 const Name = styled.div`
@@ -59,6 +70,9 @@ const ContentAvis = styled.div`
   justify-content: space-between;
   height: ${rem(70)};
   margin: 0 0 ${rem(50)} ${rem(100)};
+  @media (max-width: ${device.iphoneX}) {
+    margin: 0 0 ${rem(130)} ${rem(100)};
+  }
 `;
 
 const Position = styled.div`
@@ -69,24 +83,27 @@ const Position = styled.div`
   position: absolute;
   z-index: 1;
   font-family: ${font.fontFamily};
+  @media (max-width: ${device.iphoneX}) {
+    width: ${rem(0)};
+    margin: 0 0 0 ${rem(370)};
+  }
 `;
 
 const PositionContent = styled.div`
   display: flex;
-  justify-content: space-between;
   width: ${rem(250)};
-  margin: 0 0 ${rem(20)} 0;
+  margin: 0 0 ${rem(20)} ${rem(500)};
 `;
 
 const PinStyle = styled.img`
-  position: absolute;
   width: ${rem(16)};
 `;
 
 const City = styled.p`
   font-weight: ${font.bolder};
   color: ${color.whitetext};
-  margin: ${rem(5)} 0 0 ${rem(25)};
+  margin: ${rem(5)} 0 0 ${rem(15)};
+  width: ${rem(180)};
 `;
 
 export const LeftPart = () => {

@@ -1,14 +1,16 @@
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import { color, size, font } from "../../styles/const";
-import { IoMdSearch } from "react-icons/io";
+import { color, size, font, device } from "../../styles/const";
 
 const RightPartElements = styled.div`
   display: flex;
   align-items: center;
   width: ${rem(800)};
   transform: translateX(-50px);
+  @media (max-width: ${device.iphoneX}) {
+    width: 1px;
+  }
 `;
 
 const RightPartContent = styled.div`
@@ -18,6 +20,9 @@ const RightPartContent = styled.div`
   width: 100%;
   height: ${rem(180)};
   margin: 0 0 0 ${rem(50)};
+  @media (max-width: ${device.iphoneX}) {
+    margin: ${rem(15)} 0 0 ${rem(55)};
+  }
 `;
 
 const ContentText = styled.div`
@@ -31,13 +36,17 @@ const Title = styled.h1`
   font-family: ${font.fontFamily};
   font-weight: ${font.bolder};
   color: ${color.whitetext};
-  font-size: ${size.bigTitle};
+  font-size: ${size.veryBigText};
   width: ${rem(400)};
+  @media (max-width: ${device.iphoneX}) {
+    width: ${rem(350)};
+  }
 `;
 
 const Description = styled.p`
   font-family: ${font.fontFamily};
   font-weight: ${font.medium};
+  font-size: ${size.mediumText};
   color: ${color.whitetext};
   width: ${rem(370)};
 `;
@@ -53,6 +62,9 @@ const SearchBar = styled.textarea`
     width: ${rem(200)};
     line-height: 30px;
     color: ${color.textInput};
+  }
+  @media (max-width: ${device.iphoneX}) {
+    margin: 0 0 ${rem(40)} 0;
   }
 `;
 
