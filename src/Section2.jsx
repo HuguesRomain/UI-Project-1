@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import { ContentSectionTwo } from "../molecules/SectionTwo/content-section-two";
+import { ContentSectionTwo } from "./organisms/SectionTwo/content-section-two";
 
 const SectionTwoStyle = styled.div`
   display: flex;

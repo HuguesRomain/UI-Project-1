@@ -46,22 +46,22 @@ const AllActivity = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: ${rem(130)};
+  height: ${rem(135)};
 `;
 
 const ActivityContent = styled.div`
   display: flex;
   justify-content: space-between;
-  width: ${rem(600)};
+  width: ${rem(640)};
   @media (max-width: ${device.iphoneX}) {
-    width: ${rem(215)};
+    width: ${rem(240)};
   }
 `;
 
 const ActivityMiddleContent = styled(ActivityContent)`
-  width: ${rem(650)};
+  width: ${rem(700)};
   @media (max-width: ${device.iphoneX}) {
-    width: ${rem(300)};
+    width: ${rem(310)};
   }
 `;
 

@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
-import { LeftPart } from "../molecules/SectionOne/left-part";
-import { RightPart } from "../molecules/SectionOne/right-part";
-import { color, device } from "../styles/const";
+import { LeftPart } from "./organisms/SectionOne/left-part";
+import { RightPart } from "./organisms/SectionOne/right-part";
+import { color, device } from "./styles/const";
 
 const SectionOneContent = styled.div`
   display: flex;

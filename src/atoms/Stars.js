@@ -2,47 +2,52 @@ import React from "react";
 import styled from "styled-components";
 import StarImg from "../images/star.png";
 import { rem } from "polished";
+import { device } from "../styles/const";
 
 const StarsStyle = styled.div`
   display: flex;
   width: ${rem(110)};
-  justify-content: space-between;
 `;
 
 const Star = styled.img`
   width: ${rem(17)};
+  margin: 0 ${rem(10)} 0 0;
+  @media (max-width: ${device.iphoneX}) {
+    width: ${props => (props.size ? props.size : rem(17))};
+    margin: ${props => (props.size ? rem(2) : rem(17))};
+  }
 `;
 
-export const Stars = ({ number }) => {
+export const Stars = ({ size, number }) => {
   return (
     <StarsStyle>
       {number === 1 ? (
-        <Star src={StarImg} />
+        <Star size={size} src={StarImg} />
       ) : number === 2 ? (
         <>
-          <Star src={StarImg} />
-          <Star src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
         </>
       ) : number === 3 ? (
         <>
-          <Star src={StarImg} />
-          <Star src={StarImg} />
-          <Star src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
         </>
       ) : number === 4 ? (
         <>
-          <Star src={StarImg} />
-          <Star src={StarImg} />
-          <Star src={StarImg} />
-          <Star src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
         </>
       ) : number === 5 ? (
         <>
-          <Star src={StarImg} />
-          <Star src={StarImg} />
-          <Star src={StarImg} />
-          <Star src={StarImg} />
-          <Star src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
+          <Star size={size} src={StarImg} />
         </>
       ) : null}
     </StarsStyle>

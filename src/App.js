@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import "./App.css";
-import { SectionOne } from "./organisms/Section1";
-import { SectionTwo } from "./organisms/Section2";
+import { SectionOne } from "./Section1";
+import { SectionTwo } from "./Section2";
+import { SectionThree } from "./Section3";
 import { device } from "./styles/const";
 
 const AppStyle = styled.div`
@@ -16,6 +17,7 @@ export const App = () => {
     <AppStyle className="App">
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
     </AppStyle>
   );
 };
