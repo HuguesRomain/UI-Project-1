@@ -6,7 +6,7 @@ import { color, size, font, device } from "../../styles/const";
 const RightPartElements = styled.div`
   display: flex;
   align-items: center;
-  width: ${rem(800)};
+  width: 100%;
   transform: translateX(-50px);
 `;
 
