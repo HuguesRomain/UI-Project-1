@@ -57,6 +57,10 @@ const VillaPosition = styled.div`
 const PinStyle = styled.img`
   width: ${rem(12)};
   margin: 0 ${rem(10)} 0 0;
+  @media (max-width: ${device.iphoneX}) {
+    width: ${rem(9)};
+    height: ${rem(13)};
+  }
 `;
 
 const PriceAndStars = styled.div`
