@@ -84,8 +84,8 @@ export const CardsVilla = ({ image, title, adress, price, number }) => {
           <Text>{adress}</Text>
         </VillaPosition>
         <PriceAndStars>
-          <Stars size={"10px"} number={number} />
           <Text>{price}</Text>
+          <Stars size={"10px"} number={number} />
         </PriceAndStars>
       </CardsContent>
     </CardStyle>
