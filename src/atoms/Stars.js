@@ -14,7 +14,8 @@ const Star = styled.img`
   margin: 0 ${rem(10)} 0 0;
   @media (max-width: ${device.iphoneX}) {
     width: ${props => (props.size ? props.size : rem(17))};
-    margin: ${props => (props.size ? rem(2) : rem(17))};
+    margin: ${props => (props.size ? rem(2) : rem(5))};
+    height: ${props => (props.size ? rem(10) : rem(17))};
   }
 `;
 

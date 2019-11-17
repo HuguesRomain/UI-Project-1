@@ -42,10 +42,6 @@ const ProfilePic = styled.img`
   position: absolute;
   width: ${rem(50)};
   margin: ${rem(10)} ${rem(35)};
-  @media (max-with: ${device.iphoneX}) {
-    width: ${rem(90)};
-    margin: ${rem(20)} ${rem(5)};
-  }
 `;
 
 const Name = styled.div`
@@ -71,6 +67,7 @@ const ContentAvis = styled.div`
   height: ${rem(70)};
   margin: 0 0 ${rem(50)} ${rem(100)};
   @media (max-width: ${device.iphoneX}) {
+    height: ${rem(80)};
     margin: 0 0 ${rem(130)} ${rem(100)};
   }
 `;
@@ -97,6 +94,10 @@ const PositionContent = styled.div`
 
 const PinStyle = styled.img`
   width: ${rem(16)};
+  @media (max-width: ${device.iphoneX}) {
+    height: ${rem(21)};
+    width: ${rem(16)};
+  }
 `;
 
 const City = styled.p`
