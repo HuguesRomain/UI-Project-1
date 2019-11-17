@@ -8,9 +8,6 @@ const RightPartElements = styled.div`
   align-items: center;
   width: ${rem(800)};
   transform: translateX(-50px);
-  @media (max-width: ${device.iphoneX}) {
-    width: 1px;
-  }
 `;
 
 const RightPartContent = styled.div`
