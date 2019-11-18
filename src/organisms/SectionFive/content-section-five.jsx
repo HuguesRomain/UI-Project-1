@@ -26,7 +26,7 @@ const Title = styled.p`
   font-weight: ${font.bolder};
   font-size: ${size.veryBigText};
   @media (max-width: ${device.iphoneX}) {
-    margin: 0 0 ${rem(20)} ${rem(30)};
+    margin: 0 0 ${rem(20)} 0;
   }
 `;
 
@@ -36,6 +36,7 @@ const AllBonus = styled.div`
   width: ${rem(1200)};
   @media (max-width: ${device.iphoneX}) {
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 `;
