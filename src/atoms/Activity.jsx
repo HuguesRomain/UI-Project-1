@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { rem } from "polished";
 import { font, size, color, device } from "../styles/const";
 
 const ActivityStyle = styled.div`

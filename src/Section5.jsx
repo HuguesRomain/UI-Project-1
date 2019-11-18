@@ -14,7 +14,7 @@ const SectionFiveStyle = styled.div`
 export const SectionFive = () => {
   return (
     <SectionFiveStyle>
-      <ContentSectionFive></ContentSectionFive>
+      <ContentSectionFive />
     </SectionFiveStyle>
   );
 };

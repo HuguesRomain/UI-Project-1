@@ -12,7 +12,7 @@ const SectionTwoStyle = styled.div`
 export const SectionTwo = () => {
   return (
     <SectionTwoStyle>
-      <ContentSectionTwo></ContentSectionTwo>
+      <ContentSectionTwo />
     </SectionTwoStyle>
   );
 };

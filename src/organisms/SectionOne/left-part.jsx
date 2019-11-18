@@ -4,7 +4,6 @@ import Deadend from "../../images/deadend.jpg";
 import { rem } from "polished";
 import { color, font, device } from "../../styles/const";
 import Profile from "../../images/profilePic/profileHome1.png";
-import Pin from "../../images/pin.png";
 import { Icon } from "../../images/svg";
 import { Stars } from "../../atoms/Stars";
 
@@ -91,14 +90,6 @@ const PositionContent = styled.div`
   display: flex;
   width: ${rem(250)};
   margin: 0 0 ${rem(20)} ${rem(500)};
-`;
-
-const PinStyle = styled.img`
-  width: ${rem(16)};
-  @media (max-width: ${device.iphoneX}) {
-    height: ${rem(21)};
-    width: ${rem(16)};
-  }
 `;
 
 const City = styled.p`

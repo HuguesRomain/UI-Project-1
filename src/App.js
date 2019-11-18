@@ -6,6 +6,8 @@ import { SectionTwo } from "./Section2";
 import { SectionThree } from "./Section3";
 import { SectionFour } from "./Section4";
 import { SectionFive } from "./Section5";
+import { SectionSix } from "./Section6";
+import { SectionSeven } from "./Section7";
 import { device } from "./styles/const";
 
 const AppStyle = styled.div`
@@ -22,6 +24,8 @@ export const App = () => {
       <SectionThree />
       <SectionFour />
       <SectionFive />
+      <SectionSix />
+      <SectionSeven />
     </AppStyle>
   );
 };
