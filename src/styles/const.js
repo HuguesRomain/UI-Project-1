@@ -17,7 +17,7 @@ export const size = {
   veryBigText: "24px",
   bigText: "18px",
   mediumText: "16px",
-  description: "14px",
+  veryMediumText: "14px",
   smallText: "12px",
   verySmallText: "9px",
   icon: "33px"
