@@ -5,6 +5,7 @@ import { rem } from "polished";
 import { color, font, device } from "../../styles/const";
 import Profile from "../../images/profilePic/profileHome1.png";
 import Pin from "../../images/pin.png";
+import { Icon } from "../../images/svg";
 import { Stars } from "../../atoms/Stars";
 
 const Content = styled.div`
@@ -120,7 +121,7 @@ export const LeftPart = () => {
       </Avis>
       <Position>
         <PositionContent>
-          <PinStyle src={Pin} />
+          <Icon icon={"pin"} />
           <City>Los Angeles, California</City>
         </PositionContent>
       </Position>

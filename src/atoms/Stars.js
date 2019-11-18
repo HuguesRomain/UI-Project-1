@@ -19,38 +19,18 @@ const Star = styled.img`
   }
 `;
 
+const Repeat = props => {
+  let elements = [];
+  for (let i = 0; i < props.number; i++) {
+    elements.push(<Star size={props.size} src={StarImg} />);
+  }
+  return elements;
+};
+
 export const Stars = ({ size, number }) => {
   return (
     <StarsStyle>
-      {number === 1 ? (
-        <Star size={size} src={StarImg} />
-      ) : number === 2 ? (
-        <>
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-        </>
-      ) : number === 3 ? (
-        <>
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-        </>
-      ) : number === 4 ? (
-        <>
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-        </>
-      ) : number === 5 ? (
-        <>
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-          <Star size={size} src={StarImg} />
-        </>
-      ) : null}
+      <Repeat size={size} number={number} />
     </StarsStyle>
   );
 };

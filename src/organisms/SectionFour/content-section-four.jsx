@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import { font, color, size, device } from "../../styles/const";
-import HappyIcon from "../../images/happy.png";
+import { Icon } from "../../images/svg";
 import { Critics } from "../../molecules/SectionFour/Critics";
 import Profile1 from "../../images/profilePic/ProfileCritics1.png";
 import Stephanie from "../../images/profilePic/Stéphanie.png";
@@ -20,6 +20,9 @@ const ContentSectionFourStyle = styled.div`
   height: ${rem(400)};
   justify-content: space-between;
   font-family: ${font.fontFamily};
+  @media (max-width: ${device.iphoneX}) {
+    height: ${rem(370)};
+  }
 `;
 
 const Title = styled.p`
@@ -77,7 +80,7 @@ export const ContentSectionFour = () => {
   return (
     <ContentSectionFourStyle>
       <Title>
-        <img style={{ width: size.icon }} src={HappyIcon} />
+        <Icon icon={"happy"} />
         Ils sont fière de nous.
       </Title>
       <AllCritics>
@@ -104,7 +107,7 @@ export const ContentSectionFour = () => {
           <Critics
             pics={Hugues}
             title={"Hugues"}
-            description={"Éclaté au sol leurs dervices, minable."}
+            description={"Éclaté au sol leurs services, minable."}
             number={1}
           />
         </CriticsOne>

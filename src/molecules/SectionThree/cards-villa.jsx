@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import { color, size, font, device } from "../../styles/const";
-import Pin from "../../images/pin.png";
+import { Icon } from "../../images/svg";
 import { Stars } from "../../atoms/Stars";
 
 const CardStyle = styled.div`
@@ -54,7 +54,7 @@ const VillaPosition = styled.div`
   display: flex;
 `;
 
-const PinStyle = styled.img`
+const PinStyle = styled(Icon)`
   width: ${rem(12)};
   margin: 0 ${rem(10)} 0 0;
   @media (max-width: ${device.iphoneX}) {
@@ -80,7 +80,7 @@ export const CardsVilla = ({ image, title, adress, price, number }) => {
       <CardsContent>
         <VillaTitle>{title}</VillaTitle>
         <VillaPosition>
-          <PinStyle src={Pin} />
+          <PinStyle icon={"pin"} />
           <Text>{adress}</Text>
         </VillaPosition>
         <PriceAndStars>

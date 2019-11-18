@@ -16,6 +16,7 @@ const ActivityStyle = styled.div`
   border-radius: 16px;
   font-size: ${size.littleText};
   border: white 1px solid;
+  cursor: default;
   :hover {
     border: ${color.base} 1px solid;
     box-sizing: content-box;

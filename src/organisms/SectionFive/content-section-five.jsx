@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import { size, font, color, device } from "../../styles/const";
-import Like from "../../images/like.png";
+import { Icon } from "../../images/svg";
 import { Bonus } from "../../molecules/SectionFive/Bonus";
 import Netflix from "../../images/netflix.jpg";
 import Lyft from "../../images/lyft.jpg";
@@ -15,9 +15,6 @@ const ContentSectionFiveStyle = styled.div`
   align-items: center;
   font-family: ${font.fontFamily};
   height: ${rem(400)};
-  @media (max-width: ${device.iphoneX}) {
-    height: ${rem(350)};
-  }
 `;
 
 const Title = styled.p`
@@ -37,13 +34,17 @@ const AllBonus = styled.div`
   display: flex;
   justify-content: space-between;
   width: ${rem(1200)};
+  @media (max-width: ${device.iphoneX}) {
+    flex-direction: column;
+    width: 100%;
+  }
 `;
 
 export const ContentSectionFive = () => {
   return (
     <ContentSectionFiveStyle>
       <Title>
-        <img style={{ width: size.icon }} src={Like} />
+        <Icon icon={"like"} />
         Quelques petits bonus
       </Title>
       <AllBonus>

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { rem } from "polished";
 import { font, color, size, device } from "../../styles/const";
-import IconVilla from "../../images/iconvilla.png";
+import { Icon } from "../../images/svg.jsx";
 import { CardsVilla } from "../../molecules/SectionThree/cards-villa";
 import Villa1 from "../../images/villa/villa1.jpg";
 import Villa2 from "../../images/villa/villa2.jpg";
@@ -34,7 +34,7 @@ const Title = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: ${rem(300)};
+  width: ${rem(315)};
   color: ${color.text};
   font-weight: ${font.bolder};
   font-size: ${size.veryBigText};
@@ -47,7 +47,7 @@ export const ContentSectionThree = () => {
   return (
     <>
       <Title>
-        <img style={{ width: size.icon }} src={IconVilla} />
+        <Icon icon={"villa"} />
         Nos villas de vos rêves.
       </Title>
       <ContentStyle>

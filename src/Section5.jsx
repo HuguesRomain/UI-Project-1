@@ -5,7 +5,6 @@ import { ContentSectionFive } from "./organisms/SectionFive/content-section-five
 
 const SectionFiveStyle = styled.div`
   margin: ${rem(100)} 0;
-  display: none;
 `;
 
 export const SectionFive = () => {

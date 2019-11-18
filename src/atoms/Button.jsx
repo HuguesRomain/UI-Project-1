@@ -8,6 +8,7 @@ const ButtonStyle = styled.div`
   padding: ${rem(8)} ${rem(15)};
   border-radius: 20px;
   color: ${color.base};
+  cursor: default;
   :hover {
     background-color: ${color.base};
     color: ${color.whitetext};
