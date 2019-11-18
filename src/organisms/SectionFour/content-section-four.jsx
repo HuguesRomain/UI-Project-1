@@ -23,6 +23,8 @@ const ContentSectionFourStyle = styled.div`
   @media (max-width: ${device.iphoneX}) {
     width: 100%;
     height: ${rem(370)};
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -60,6 +62,7 @@ const CriticsOne = styled.div`
   @media (max-width: ${device.iphoneX}) {
     width: 100%;
     flex-direction: column;
+    align-items: center;
     margin: 0 0 0 0;
   }
 `;
@@ -71,6 +74,7 @@ const CriticsTwo = styled.div`
   @media (max-width: ${device.iphoneX}) {
     width: 100%;
     flex-direction: column;
+    align-items: center;
     margin: 0 0 0 0;
   }
 `;
