@@ -20,12 +20,6 @@ const ContentSectionFourStyle = styled.div`
   height: ${rem(400)};
   justify-content: space-between;
   font-family: ${font.fontFamily};
-  @media (max-width: ${device.iphoneX}) {
-    width: 100%;
-    height: ${rem(370)};
-    justify-content: center;
-    align-items: center;
-  }
 `;
 
 const Title = styled.p`
@@ -100,19 +94,17 @@ export const ContentSectionFour = () => {
             title={"Florentine"}
             description={"C’était ok cool."}
             number={3}
-            hidden={true}
           />
           <Critics
             pics={Constance}
             title={"Constance"}
             description={"J’ai passé des vacances magique."}
             number={4}
-            hidden={true}
           />
           <Critics
             pics={Hugues}
             title={"Hugues"}
-            description={"Éclaté au sol leurs dervice, minable."}
+            description={"Éclaté au sol leurs dervices, minable."}
             number={1}
           />
         </CriticsOne>
@@ -122,12 +114,14 @@ export const ContentSectionFour = () => {
             title={"Patrick"}
             description={"Franchement ça tue de fou ce service."}
             number={4}
+            hidden={true}
           />
           <Critics
             pics={Medore}
             title={"Medore"}
             description={"Wouaf ! Wouaf ! grrrrr…Wouaf !"}
             number={5}
+            hidden={true}
           />
           <Critics
             pics={Florentine}

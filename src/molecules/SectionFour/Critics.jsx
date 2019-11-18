@@ -15,7 +15,6 @@ const CriticsStyle = styled.div`
   border-radius: 10px;
   margin: ${rem(10)};
   @media (max-width: ${device.iphoneX}) {
-    padding: ${rem(50)} ${rem(10)};
     display: ${props => (props.hidden === true ? "none" : "flex")};
   }
 `;

@@ -48,7 +48,7 @@ export const ContentSectionThree = () => {
     <>
       <Title>
         <img style={{ width: size.icon }} src={IconVilla} />
-        Nos villa de vos rêves.
+        Nos villas de vos rêves.
       </Title>
       <ContentStyle>
         <AllVilla>
@@ -56,42 +56,42 @@ export const ContentSectionThree = () => {
             title={"The yellow house"}
             image={Villa1}
             adress={"16 Hermount Street, Los Angeles"}
-            price={"120$/day"}
+            price={"720$/day"}
             number={3}
           />
           <CardsVilla
             title={"The green house"}
             image={Villa2}
             adress={"9194 High Ridge St.Glendora"}
-            price={"120$/day"}
+            price={"600$/day"}
             number={4}
           />
           <CardsVilla
             title={"The green house"}
             image={Villa3}
-            adress={"9194 High Ridge St.Glendora"}
-            price={"120$/day"}
+            adress={"91 Wall Street, NewYork"}
+            price={"890$/day"}
             number={4}
           />
           <CardsVilla
             title={"The yellow house"}
             image={Villa4}
             adress={"16 Hermount Street, Los Angeles"}
-            price={"120$/day"}
+            price={"1 PEL/day"}
             number={3}
           />
           <CardsVilla
             title={"Not incredible house"}
             image={Villa5}
             adress={"16 Hermount Street, Los Angeles"}
-            price={"120$/day"}
+            price={"900$/day"}
             number={2}
           />
           <CardsVilla
             title={"The yellow house"}
             image={Villa6}
             adress={"16 Hermount Street, Los Angeles"}
-            price={"120$/day"}
+            price={"20$/day"}
             number={3}
           />
         </AllVilla>
