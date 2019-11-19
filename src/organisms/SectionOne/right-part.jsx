@@ -69,7 +69,7 @@ export const RightPart = () => {
     <RightPartElements>
       <RightPartContent>
         <ContentText>
-          <Title>Les meilleurs moment métitent les meilleurs logement.</Title>
+          <Title>Les meilleurs moment méritent les meilleurs logement.</Title>
           <Description>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor

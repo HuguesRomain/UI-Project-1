@@ -25,7 +25,7 @@ const AllVilla = styled.div`
   flex-wrap: wrap;
   width: ${rem(900)};
   border-spacing: 5px 1rem;
-  padding: ${rem(30)} 0 0 0;
+  padding: ${rem(50)} 0 0 0;
   @media (max-width: ${device.iphoneX}) {
     width: ${rem(320)};
   }
@@ -39,7 +39,6 @@ const Title = styled.div`
   color: ${color.text};
   font-weight: ${font.bolder};
   font-size: ${size.veryBigText};
-  margin: 0 0 ${rem(20)} ${rem(150)};
   @media (max-width: ${device.iphoneX}) {
     margin: 0 0 0 0;
   }
