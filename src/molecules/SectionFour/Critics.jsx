@@ -16,6 +16,7 @@ const CriticsStyle = styled.div`
   @media (max-width: ${device.iphoneX}) {
     display: ${props => (props.hidden === true ? "none" : "flex")};
     margin: ${rem(20)} 0;
+    width: 100%;
   }
 `;
 
