@@ -54,10 +54,11 @@ const SearchBar = styled.textarea`
   padding: ${rem(5)} 0;
   border-radius: 3px;
   resize: none;
+  font-family: ${font.fontFamily};
   ::placeholder {
     text-align: center;
-    width: ${rem(200)};
-    line-height: 30px;
+    width: ${rem(210)};
+    line-height: 40px;
     color: ${color.textInput};
   }
   @media (max-width: ${device.iphoneX}) {
