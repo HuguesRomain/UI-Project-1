@@ -15,6 +15,9 @@ const ContentSectionFiveStyle = styled.div`
   align-items: center;
   font-family: ${font.fontFamily};
   height: ${rem(400)};
+  @media (max-width: ${device.iphoneX}) {
+    height: ${rem(800)};
+  }
 `;
 
 const Title = styled.p`

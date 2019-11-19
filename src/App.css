@@ -123,5 +123,7 @@ table {
   border-spacing: 0;
 }
 
-.App {
+a {
+  color: inherit;
+  text-decoration: none;
 }

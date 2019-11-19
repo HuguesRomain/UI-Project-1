@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { rem, backgroundImages } from "polished";
+import { rem } from "polished";
 import imgSection6 from "./images/Section6img.jpg";
 import { color, size, font, device } from "./styles/const";
 
@@ -39,7 +39,7 @@ const TextContent = styled.div`
   width: ${rem(359)};
   font-weight: ${font.bolder};
   @media (max-width: ${device.iphoneX}) {
-    width: ${rem(200)};
+    width: ${rem(300)};
   }
 `;
 
