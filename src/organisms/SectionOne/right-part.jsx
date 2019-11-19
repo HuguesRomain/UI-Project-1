@@ -15,8 +15,8 @@ const RightPartContent = styled.div`
   justify-content: space-between;
   flex-direction: column;
   width: 100%;
-  height: ${rem(180)};
   margin: 0 0 0 ${rem(50)};
+  padding: ${rem(20)} 0;
   @media (max-width: ${device.iphoneX}) {
     margin: ${rem(15)} 0 0 ${rem(55)};
   }
@@ -46,6 +46,7 @@ const Description = styled.p`
   font-size: ${size.mediumText};
   color: ${color.whitetext};
   width: ${rem(370)};
+  padding: ${rem(10)} 0;
 `;
 
 const SearchBar = styled.textarea`
@@ -55,6 +56,7 @@ const SearchBar = styled.textarea`
   border-radius: 3px;
   resize: none;
   font-family: ${font.fontFamily};
+  margin: ${rem(100)} 0 0 0;
   ::placeholder {
     text-align: center;
     width: ${rem(210)};
