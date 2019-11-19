@@ -41,7 +41,7 @@ const Description = styled.p`
   font-weight: ${font.medium};
   font-size: ${size.mediumText};
   color: ${color.whitetext};
-  width: ${rem(370)};
+  width: 85%;
   padding: ${rem(10)} 0;
 `;
 

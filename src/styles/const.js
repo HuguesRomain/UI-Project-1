@@ -24,5 +24,5 @@ export const size = {
 };
 
 export const device = {
-  iphoneX: "414px"
+  iphoneX: "1250px"
 };
