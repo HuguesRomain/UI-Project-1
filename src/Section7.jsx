@@ -8,13 +8,10 @@ const Footer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: ${rem(200)};
   font-family: ${font.fontFamily};
   font-weight: ${font.heavy};
   color: ${color.text};
-  @media (max-width: ${device.iphoneX}) {
-    height: ${rem(400)};
-  }
+  padding: ${rem(50)} 0;
 `;
 
 const ContentFooter = styled.div`
@@ -24,7 +21,6 @@ const ContentFooter = styled.div`
   width: 55%;
   @media (max-width: ${device.iphoneX}) {
     flex-direction: column;
-    height: ${rem(330)};
     width: 100%;
   }
 `;
@@ -65,9 +61,9 @@ const GroupeElementsTwo = styled.div`
   justify-content: space-between;
   @media (max-width: ${device.iphoneX}) {
     width: ${rem(300)};
-    height: ${rem(200)};
     justify-content: space-around;
     flex-direction: column;
+    padding-top: ${rem(40)};
   }
 `;
 
@@ -106,7 +102,7 @@ export const SectionSeven = () => {
               <Text>Politique de confidentialité</Text>
             </a>
           </Element>
-          <Element>
+          <Element style={{ paddingTop: rem(30) }}>
             <Text style={{ color: color.base }}>Social</Text>
             <Socials>
               <Social icon={"facebook"} />

@@ -8,7 +8,6 @@ const SectionSixStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: ${rem(595)};
   color: ${color.base};
   font-family: ${font.fontFamily};
   @media (max-width: ${device.iphoneX}) {
@@ -35,7 +34,7 @@ const TextContent = styled.div`
   font-size: ${size.veryBigText};
   z-index: 1;
   background-color: ${color.whitetext};
-  height: ${rem(64)};
+  padding: ${rem(20)} 0;
   width: ${rem(359)};
   font-weight: ${font.bolder};
   @media (max-width: ${device.iphoneX}) {

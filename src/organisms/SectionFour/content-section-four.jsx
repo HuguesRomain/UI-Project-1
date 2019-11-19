@@ -17,12 +17,8 @@ const ContentSectionFourStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: ${rem(400)};
   justify-content: space-between;
   font-family: ${font.fontFamily};
-  @media (max-width: ${device.iphoneX}) {
-    height: ${rem(370)};
-  }
 `;
 
 const Title = styled.p`
@@ -39,9 +35,9 @@ const AllCritics = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: ${rem(300)};
   width: ${rem(1440)};
   overflow-x: auto;
+  padding: ${rem(40)} 0;
   &::-webkit-scrollbar {
     display: none;
   }
@@ -68,6 +64,7 @@ const CriticsTwo = styled.div`
   justify-content: space-between;
   width: ${rem(1700)};
   margin: 0 0 0 ${rem(330)};
+  padding: ${rem(15)} 0;
   @media (max-width: ${device.iphoneX}) {
     width: 100%;
     flex-direction: column;

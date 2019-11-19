@@ -9,7 +9,6 @@ const CriticsStyle = styled.div`
   justify-content: center;
   align-items: center;
   width: ${rem(350)};
-  height: ${rem(120)};
   box-shadow: 1px 1px 15px 0px rgba(25, 25, 25, 0.2);
   color: ${color.text};
   border-radius: 10px;
@@ -23,6 +22,7 @@ const CriticsContent = styled.div`
   display: flex;
   justify-content: space-between;
   width: ${rem(260)};
+  padding: ${rem(20)} 0;
 `;
 
 const Pics = styled.img`
@@ -34,7 +34,6 @@ const Infos = styled.div`
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: ${rem(80)};
 `;
 
 const Title = styled.p`

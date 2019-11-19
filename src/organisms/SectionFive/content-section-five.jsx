@@ -14,10 +14,6 @@ const ContentSectionFiveStyle = styled.div`
   justify-content: space-between;
   align-items: center;
   font-family: ${font.fontFamily};
-  height: ${rem(400)};
-  @media (max-width: ${device.iphoneX}) {
-    height: ${rem(800)};
-  }
 `;
 
 const Title = styled.p`
@@ -37,6 +33,7 @@ const AllBonus = styled.div`
   display: flex;
   justify-content: space-between;
   width: ${rem(1200)};
+  padding: ${rem(50)} 0;
   @media (max-width: ${device.iphoneX}) {
     flex-direction: column;
     align-items: center;

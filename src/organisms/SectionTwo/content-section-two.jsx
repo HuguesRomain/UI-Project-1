@@ -11,7 +11,6 @@ const ContentStyle = styled.div`
   flex-direction: column;
   align-items: center;
   font-family: ${font.fontFamily};
-  height: ${rem(290)};
 `;
 
 const ContentText = styled.div`
@@ -19,10 +18,6 @@ const ContentText = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  height: ${rem(60)};
-  @media (max-width: ${device.iphoneX}) {
-    height: ${rem(90)};
-  }
 `;
 
 const Title = styled.p`
@@ -35,9 +30,11 @@ const Description = styled.p`
   font-size: ${size.veryBigText};
   font-weight: ${font.medium};
   color: ${color.text};
+  padding: ${rem(15)} 0 0 0;
   @media (max-width: ${device.iphoneX}) {
     width: ${rem(360)};
     text-align: center;
+    padding: ${rem(10)} 0 0 0;
   }
 `;
 
@@ -46,7 +43,7 @@ const AllActivity = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: ${rem(135)};
+  padding: ${rem(30)} 0;
 `;
 
 const ActivityContent = styled.div`
@@ -60,6 +57,7 @@ const ActivityContent = styled.div`
 
 const ActivityMiddleContent = styled(ActivityContent)`
   width: ${rem(700)};
+  padding: ${rem(20)};
   @media (max-width: ${device.iphoneX}) {
     width: ${rem(310)};
   }

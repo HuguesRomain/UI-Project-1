@@ -18,7 +18,6 @@ const TextContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: ${rem(100)};
   margin: ${rem(10)};
 `;
 
@@ -31,6 +30,7 @@ const ImgContent = styled.img`
 
 const BonusTitle = styled.p`
   font-size: ${size.mediumText};
+  padding: ${rem(10)} 0;
   @media (max-width: ${device.iphoneX}) {
     width: ${rem(200)};
   }
@@ -39,6 +39,7 @@ const BonusTitle = styled.p`
 const BonusDescription = styled.p`
   font-size: ${size.mediumText};
   width: ${rem(260)};
+  padding: ${rem(10)} 0;
   @media (max-width: ${device.iphoneX}) {
     width: ${rem(200)};
   }

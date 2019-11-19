@@ -33,13 +33,11 @@ const CardsContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: ${rem(70)};
   background-color: ${color.whitetext};
   border-radius: 0 0% 20px 20px;
   padding: ${rem(20)} ${rem(10)} ${rem(40)} ${rem(10)};
   @media (max-width: ${device.iphoneX}) {
     padding: ${rem(10)} ${rem(0)} ${rem(10)} ${rem(10)};
-    height: ${rem(50)};
   }
 `;
 
@@ -52,6 +50,7 @@ const VillaTitle = styled.p`
 
 const VillaPosition = styled.div`
   display: flex;
+  padding: ${rem(10)} 0;
 `;
 
 const PinStyle = styled(Icon)`
