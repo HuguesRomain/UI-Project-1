@@ -48,6 +48,9 @@ const Descrition = styled.p`
   font-size: ${size.veryMediumText};
   font-weight: ${font.heavy};
   margin: 0 0 ${rem(5)} 0;
+  @media (max-width: ${device.iphoneX}) {
+    padding-top: ${rem(10)};
+  }
 `;
 
 export const Critics = ({ hidden, pics, title, description, number }) => {

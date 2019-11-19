@@ -19,6 +19,7 @@ const TextContent = styled.div`
   flex-direction: column;
   justify-content: space-around;
   margin: ${rem(10)};
+  width: ${rem(220)};
 `;
 
 const ImgContent = styled.img`
@@ -31,18 +32,12 @@ const ImgContent = styled.img`
 const BonusTitle = styled.p`
   font-size: ${size.mediumText};
   padding: ${rem(10)} 0;
-  @media (max-width: ${device.iphoneX}) {
-    width: ${rem(200)};
-  }
 `;
 
 const BonusDescription = styled.p`
   font-size: ${size.mediumText};
-  width: ${rem(260)};
   padding: ${rem(10)} 0;
-  @media (max-width: ${device.iphoneX}) {
-    width: ${rem(200)};
-  }
+  line-height: 1.3;
 `;
 
 export const Bonus = ({ title, content, img }) => {

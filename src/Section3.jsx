@@ -7,6 +7,7 @@ import { color, font } from "./styles/const";
 const SectionThreeStyle = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   background-color: ${color.light};
   padding: ${rem(30)} 0;

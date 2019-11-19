@@ -41,7 +41,7 @@ const Title = styled.div`
   font-size: ${size.veryBigText};
   margin: 0 0 ${rem(20)} ${rem(150)};
   @media (max-width: ${device.iphoneX}) {
-    margin: 0 0 ${rem(20)} ${rem(30)};
+    margin: 0 0 0 0;
   }
 `;
 export const ContentSectionThree = () => {

@@ -34,10 +34,6 @@ const Title = styled.h1`
   font-weight: ${font.bolder};
   color: ${color.whitetext};
   font-size: ${size.veryBigText};
-  width: ${rem(400)};
-  @media (max-width: ${device.iphoneX}) {
-    width: ${rem(350)};
-  }
 `;
 
 const Description = styled.p`
