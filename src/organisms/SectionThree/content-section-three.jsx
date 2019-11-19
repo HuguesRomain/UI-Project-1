@@ -25,6 +25,7 @@ const AllVilla = styled.div`
   flex-wrap: wrap;
   width: ${rem(900)};
   border-spacing: 5px 1rem;
+  padding: ${rem(30)} 0 0 0;
   @media (max-width: ${device.iphoneX}) {
     width: ${rem(320)};
   }

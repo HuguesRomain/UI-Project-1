@@ -64,7 +64,7 @@ const SearchBar = styled.textarea`
     color: ${color.textInput};
   }
   @media (max-width: ${device.iphoneX}) {
-    margin: 0 0 ${rem(40)} 0;
+    margin: ${rem(40)} 0 ${rem(40)} 0;
   }
 `;
 

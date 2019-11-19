@@ -5,6 +5,9 @@ import { ContentSectionThree } from "./organisms/SectionThree/content-section-th
 import { color, font } from "./styles/const";
 
 const SectionThreeStyle = styled.div`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   background-color: ${color.light};
   padding: ${rem(30)} 0;
   font-family: ${font.fontFamily};
