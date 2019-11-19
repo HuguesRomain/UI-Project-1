@@ -32,6 +32,12 @@ const Element = styled.div`
   height: ${rem(80)};
 `;
 
+const ElementSocial = styled(Element)`
+  @media (max-width: ${device.iphoneX}) {
+    padding-top: ${rem(30)};
+  }
+`;
+
 const Text = styled.p`
   :hover {
     color: ${color.base};
@@ -102,14 +108,14 @@ export const SectionSeven = () => {
               <Text>Politique de confidentialité</Text>
             </a>
           </Element>
-          <Element style={{ paddingTop: rem(30) }}>
+          <ElementSocial>
             <Text style={{ color: color.base }}>Social</Text>
             <Socials>
               <Social icon={"facebook"} />
               <Social icon={"twitter"} />
               <Social icon={"instagram"} />
             </Socials>
-          </Element>
+          </ElementSocial>
         </GroupeElementsTwo>
       </ContentFooter>
     </Footer>
