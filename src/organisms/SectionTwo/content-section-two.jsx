@@ -68,9 +68,7 @@ export const ContentSectionTwo = () => {
     <ContentStyle>
       <ContentText>
         <Title>Trouvez le lieu de vos rêves.</Title>
-        <Description>
-          Quelle est la destination qui vous conviennent ?
-        </Description>
+        <Description>Quelle est la destination qui vous convient ?</Description>
       </ContentText>
       <AllActivity>
         <ActivityContent>

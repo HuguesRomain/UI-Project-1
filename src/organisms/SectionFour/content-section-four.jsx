@@ -78,7 +78,7 @@ export const ContentSectionFour = () => {
     <ContentSectionFourStyle>
       <Title>
         <Icon icon={"happy"} />
-        Ils sont fière de nous.
+        Ils sont fières de nous.
       </Title>
       <AllCritics>
         <CriticsOne>
